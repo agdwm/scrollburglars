@@ -63,13 +63,16 @@ a {
   justify-content: space-between;
   align-items: baseline;
   padding: 12px;
-
   margin: 0 auto;
   max-width: 800px;
 }
 
 .main-article {
   padding: 0 12px;
+
+  @media (width <= 750px) {
+    overflow: hidden;
+  }
 }
 
 .site-header ul {
@@ -121,6 +124,10 @@ a {
   flex-direction: column;
   align-items: center;
   transform: translate(-150%, 200px);
+
+  @media (width <= 975px) {
+    display: none;
+  }
 }
 
 .social-icons a {
@@ -138,12 +145,6 @@ a {
 
 .social-icons a:hover {
   opacity: 1;
-}
-
-@media (max-width: 975px) {
-  .social-icons {
-    display: none;
-  }
 }
 
 .heading-decoration {
